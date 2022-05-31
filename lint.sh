@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -e
 
 if [[ ! $VIRTUAL_ENV =~ get-stripe-payments-by-country ]]; then
     echo "FATAL: venv not active"
