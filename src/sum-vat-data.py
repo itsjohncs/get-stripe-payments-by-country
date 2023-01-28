@@ -64,7 +64,7 @@ def main(exchange_rate):
             add_dicts, (v for k, v in data.items() if k in EU_COUNTRY_CODES)
         ),
     )
-    for k, v in data.items():
+    for k, v in sorted(data.items(), key=lambda a: a[0]):
         if k not in EU_COUNTRY_CODES:
             continue
 
