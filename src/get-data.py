@@ -110,5 +110,5 @@ if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     mode = "live" if args.live else "test"
     setup_stripe(mode)
-    print(f"Getting {mode} data for {args.period_start} to {args.period_end}")
+    print(f"Getting {mode} data for {args.period_start} to {args.period_end}", file=sys.stderr)
     main(args.period_start, args.period_end)
