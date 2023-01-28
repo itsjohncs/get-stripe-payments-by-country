@@ -71,7 +71,7 @@ def parse_args(argv):
         type=parse_datetime,
         help="The start of the period to get payments for.",
     )
-    parser.add_argument("--live", action="store_true")
+    parser.add_argument("--live", action="store_true", help="Use the prod key, rather than the testing one.")
 
     return parser.parse_args(argv)
 
